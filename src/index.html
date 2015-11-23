@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="tink.anchorscroll" ng-controller="ctrl">
+<html class="has-top-nav" ng-app="anchorscroll" ng-controller="ctrl">
 <head>
   <meta charset="utf-8">
   <title>Tink module</title>
@@ -8,11 +8,53 @@
   <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0">
   <!-- bower:css -->
   <!-- endbower -->
+  <link rel="stylesheet" href="bower_components/tink-core/dist/tink.css" />
 </head>
 <body>
 
+<nav data-tink-top-nav class="nav-top">
+  <ul class="nav-top-left">
+    <li class="nav-top-logo">
+      <a href="#" title=""><span>Digipolis</span></a>
+    </li>
+  </ul>
+</nav>
+
 <!-- <tink-skeleton data-text="Skeleton is working fine!"></tink-skeleton> -->
-<button ng-click="test()">Test</button>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-push-5 col-md-push-4 col-lg-push-3">
+      <h1 id="up">Push the button</h1>
+      <p>
+        <button ng-click="scr('down')">Scroll m*th*f*ck*</button>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan ultricies bibendum. Quisque pretium libero tellus, quis lobortis diam semper non. Phasellus ultrices consectetur dictum. Phasellus maximus est non libero vehicula ultrices. Duis ac dui vestibulum erat elementum porta ut non nisl. Nullam at neque ut turpis sollicitudin egestas sed ut tortor. Pellentesque maximus lectus lectus, ut tempor enim vulputate ultrices. Nulla ornare auctor est eget euismod. Duis rhoncus vel tortor eget iaculis. Aliquam condimentum arcu eget dolor tincidunt scelerisque. Suspendisse et massa orci.</p>
+      <p>Curabitur nec enim quis orci placerat suscipit. Pellentesque hendrerit eu mi a vestibulum. Morbi velit mi, tempor id euismod in, ornare et libero. Donec nec laoreet nisl, eu tincidunt enim. Nam suscipit magna a suscipit ultricies. Curabitur gravida enim nec nisl posuere, at volutpat leo placerat. Suspendisse feugiat egestas laoreet. Duis tempus convallis tortor at lobortis. Vestibulum aliquet nunc ac magna aliquam vestibulum. Integer sed dolor ut tellus suscipit hendrerit. Fusce mollis tortor et ligula egestas gravida. Vivamus malesuada risus vitae est lacinia blandit. Ut at volutpat lorem. Pellentesque eu quam enim. Proin ultricies erat lacus, eget rutrum felis ultricies in. Quisque ullamcorper tortor quis sem pulvinar, a fermentum tortor rhoncus.</p>
+      <p>Curabitur ligula augue, varius at aliquet sit amet, viverra ac risus. Etiam efficitur vel nisl sed porta. Vestibulum sed suscipit nunc. Praesent quis est eget risus varius hendrerit. Quisque ullamcorper vitae justo vitae varius. In fringilla finibus porta. Pellentesque sit amet efficitur felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus rhoncus rhoncus orci, at posuere purus. Aenean nec sodales dui, vel congue sem. Sed eu lectus condimentum, imperdiet dolor et, venenatis magna. Etiam in quam ut nulla placerat imperdiet. Nunc commodo orci urna, et fermentum quam fermentum a. Vivamus aliquam aliquam sem, interdum dignissim mi tincidunt nec. Suspendisse nunc mi, egestas vel nibh ut, consectetur commodo sapien.</p>
+      <p>Vestibulum leo augue, posuere quis eleifend eu, viverra sit amet sapien. Vestibulum nec felis posuere, gravida libero ut, varius elit. Suspendisse potenti. Vivamus blandit vestibulum enim, ut vehicula lorem tincidunt eu. Nunc vulputate ligula lacus, eget vulputate orci varius vitae. Suspendisse varius ligula sed erat fringilla bibendum. Maecenas tempor sit amet arcu sed pulvinar. Praesent eleifend lectus neque, et tempor nisi volutpat porttitor. Sed ullamcorper nisl finibus, bibendum tortor vitae, auctor elit. Morbi eu nisi arcu. Proin massa magna, viverra viverra iaculis id, pretium ut eros. Ut vel lectus pellentesque, tristique augue commodo, lacinia sapien.</p>
+      <p>Nullam malesuada, orci sed tempus ornare, erat lorem laoreet mi, et rhoncus nisi ligula et elit. Etiam aliquam venenatis nisl. Morbi quis augue rhoncus, blandit neque vel, vestibulum ligula. Integer at dui et justo feugiat rhoncus sed molestie mi. Morbi et dui libero. Morbi a lacus ac felis hendrerit pellentesque. Proin hendrerit luctus finibus. Mauris in augue varius, pellentesque tellus eu, dignissim justo. Nulla facilisi. Praesent cursus consectetur felis. Curabitur eget velit nulla. Quisque vitae sem sit amet tellus pellentesque convallis quis quis ante.</p>
+      <p>Suspendisse lacinia ac felis vitae volutpat. Donec vel leo est. Aliquam tincidunt felis non quam finibus, vitae volutpat dolor feugiat. Sed porta tellus id gravida pulvinar. Proin ex justo, convallis sit amet blandit nec, commodo sed nibh. Vivamus vitae vestibulum ligula. Nulla pretium leo accumsan, malesuada odio a, commodo est. Aliquam auctor tortor vel ipsum ultrices, ut commodo neque fringilla. Curabitur risus lectus, rhoncus vitae lorem lobortis, scelerisque blandit dolor. Phasellus ut libero arcu. Nunc ac magna in ligula condimentum accumsan a sed mi. Etiam pellentesque rhoncus ex ac elementum. Etiam tristique tincidunt lacus non hendrerit. Duis non nisl laoreet, aliquet justo ut, vehicula lacus. Vestibulum efficitur leo imperdiet nulla fermentum, a pretium mi vehicula.</p>
+      <p>Curabitur at dui eu metus porta dignissim. In hendrerit neque in dictum mollis. Donec vitae rutrum lacus. Proin imperdiet velit vitae risus tincidunt, in feugiat orci rhoncus. Nam eget rhoncus orci. Sed ac elementum diam. Praesent aliquet egestas condimentum. Vivamus egestas risus vel eleifend condimentum.</p>
+      <p>Sed eget consequat dolor. Maecenas sed consectetur libero. Morbi et felis orci. Donec enim lectus, accumsan vel nisl in, ullamcorper dignissim nulla. Praesent vestibulum magna tortor, id imperdiet diam egestas ac. Aliquam a maximus sem. Curabitur faucibus sodales elit, id eleifend elit tristique dapibus. Etiam vitae viverra lectus. Pellentesque facilisis, tellus ut accumsan porta, purus arcu luctus ante, vitae imperdiet massa eros vitae nulla. Cras sed elit quis augue pulvinar fermentum sit amet eget enim. Nullam dictum metus et ex finibus hendrerit. Praesent facilisis eros mauris, cursus ullamcorper ligula cursus et.</p>
+      <p>Sed pharetra felis vel mi aliquet, non efficitur ligula mattis. Praesent tempor dapibus eros, ac semper mauris placerat vel. Phasellus hendrerit, metus nec convallis rutrum, ante quam fermentum nulla, interdum gravida dolor odio sit amet felis. Integer risus leo, pulvinar at tortor eget, laoreet accumsan eros. Sed urna ligula, ornare luctus lorem sit amet, eleifend vestibulum diam. Maecenas luctus imperdiet metus id rutrum. Sed sit amet odio lorem. Proin tristique a ipsum ac consequat. Mauris mollis lobortis enim pharetra hendrerit.</p>
+      <p>Donec in commodo ligula. Ut blandit, sapien eget luctus pellentesque, est arcu auctor quam, et faucibus lacus est nec sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed neque diam, lobortis nec bibendum ac, accumsan in lectus. Aliquam finibus in massa quis imperdiet. Aenean quis convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia, neque ut consequat consectetur, sapien lectus tempor ligula, non consequat nibh mi a dolor.</p>
+
+      <h1 id="down">Scroll to here <button class="btn-sm" ng-click="scr('up')">Scroll back up</button></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan ultricies bibendum. Quisque pretium libero tellus, quis lobortis diam semper non. Phasellus ultrices consectetur dictum. Phasellus maximus est non libero vehicula ultrices. Duis ac dui vestibulum erat elementum porta ut non nisl. Nullam at neque ut turpis sollicitudin egestas sed ut tortor. Pellentesque maximus lectus lectus, ut tempor enim vulputate ultrices. Nulla ornare auctor est eget euismod. Duis rhoncus vel tortor eget iaculis. Aliquam condimentum arcu eget dolor tincidunt scelerisque. Suspendisse et massa orci.</p>
+      <p>Curabitur nec enim quis orci placerat suscipit. Pellentesque hendrerit eu mi a vestibulum. Morbi velit mi, tempor id euismod in, ornare et libero. Donec nec laoreet nisl, eu tincidunt enim. Nam suscipit magna a suscipit ultricies. Curabitur gravida enim nec nisl posuere, at volutpat leo placerat. Suspendisse feugiat egestas laoreet. Duis tempus convallis tortor at lobortis. Vestibulum aliquet nunc ac magna aliquam vestibulum. Integer sed dolor ut tellus suscipit hendrerit. Fusce mollis tortor et ligula egestas gravida. Vivamus malesuada risus vitae est lacinia blandit. Ut at volutpat lorem. Pellentesque eu quam enim. Proin ultricies erat lacus, eget rutrum felis ultricies in. Quisque ullamcorper tortor quis sem pulvinar, a fermentum tortor rhoncus.</p>
+      <p>Curabitur ligula augue, varius at aliquet sit amet, viverra ac risus. Etiam efficitur vel nisl sed porta. Vestibulum sed suscipit nunc. Praesent quis est eget risus varius hendrerit. Quisque ullamcorper vitae justo vitae varius. In fringilla finibus porta. Pellentesque sit amet efficitur felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus rhoncus rhoncus orci, at posuere purus. Aenean nec sodales dui, vel congue sem. Sed eu lectus condimentum, imperdiet dolor et, venenatis magna. Etiam in quam ut nulla placerat imperdiet. Nunc commodo orci urna, et fermentum quam fermentum a. Vivamus aliquam aliquam sem, interdum dignissim mi tincidunt nec. Suspendisse nunc mi, egestas vel nibh ut, consectetur commodo sapien.</p>
+      <p>Vestibulum leo augue, posuere quis eleifend eu, viverra sit amet sapien. Vestibulum nec felis posuere, gravida libero ut, varius elit. Suspendisse potenti. Vivamus blandit vestibulum enim, ut vehicula lorem tincidunt eu. Nunc vulputate ligula lacus, eget vulputate orci varius vitae. Suspendisse varius ligula sed erat fringilla bibendum. Maecenas tempor sit amet arcu sed pulvinar. Praesent eleifend lectus neque, et tempor nisi volutpat porttitor. Sed ullamcorper nisl finibus, bibendum tortor vitae, auctor elit. Morbi eu nisi arcu. Proin massa magna, viverra viverra iaculis id, pretium ut eros. Ut vel lectus pellentesque, tristique augue commodo, lacinia sapien.</p>
+      <p>Nullam malesuada, orci sed tempus ornare, erat lorem laoreet mi, et rhoncus nisi ligula et elit. Etiam aliquam venenatis nisl. Morbi quis augue rhoncus, blandit neque vel, vestibulum ligula. Integer at dui et justo feugiat rhoncus sed molestie mi. Morbi et dui libero. Morbi a lacus ac felis hendrerit pellentesque. Proin hendrerit luctus finibus. Mauris in augue varius, pellentesque tellus eu, dignissim justo. Nulla facilisi. Praesent cursus consectetur felis. Curabitur eget velit nulla. Quisque vitae sem sit amet tellus pellentesque convallis quis quis ante.</p>
+      <p>Suspendisse lacinia ac felis vitae volutpat. Donec vel leo est. Aliquam tincidunt felis non quam finibus, vitae volutpat dolor feugiat. Sed porta tellus id gravida pulvinar. Proin ex justo, convallis sit amet blandit nec, commodo sed nibh. Vivamus vitae vestibulum ligula. Nulla pretium leo accumsan, malesuada odio a, commodo est. Aliquam auctor tortor vel ipsum ultrices, ut commodo neque fringilla. Curabitur risus lectus, rhoncus vitae lorem lobortis, scelerisque blandit dolor. Phasellus ut libero arcu. Nunc ac magna in ligula condimentum accumsan a sed mi. Etiam pellentesque rhoncus ex ac elementum. Etiam tristique tincidunt lacus non hendrerit. Duis non nisl laoreet, aliquet justo ut, vehicula lacus. Vestibulum efficitur leo imperdiet nulla fermentum, a pretium mi vehicula.</p>
+      <p>Curabitur at dui eu metus porta dignissim. In hendrerit neque in dictum mollis. Donec vitae rutrum lacus. Proin imperdiet velit vitae risus tincidunt, in feugiat orci rhoncus. Nam eget rhoncus orci. Sed ac elementum diam. Praesent aliquet egestas condimentum. Vivamus egestas risus vel eleifend condimentum.</p>
+      <p>Sed eget consequat dolor. Maecenas sed consectetur libero. Morbi et felis orci. Donec enim lectus, accumsan vel nisl in, ullamcorper dignissim nulla. Praesent vestibulum magna tortor, id imperdiet diam egestas ac. Aliquam a maximus sem. Curabitur faucibus sodales elit, id eleifend elit tristique dapibus. Etiam vitae viverra lectus. Pellentesque facilisis, tellus ut accumsan porta, purus arcu luctus ante, vitae imperdiet massa eros vitae nulla. Cras sed elit quis augue pulvinar fermentum sit amet eget enim. Nullam dictum metus et ex finibus hendrerit. Praesent facilisis eros mauris, cursus ullamcorper ligula cursus et.</p>
+      <p>Sed pharetra felis vel mi aliquet, non efficitur ligula mattis. Praesent tempor dapibus eros, ac semper mauris placerat vel. Phasellus hendrerit, metus nec convallis rutrum, ante quam fermentum nulla, interdum gravida dolor odio sit amet felis. Integer risus leo, pulvinar at tortor eget, laoreet accumsan eros. Sed urna ligula, ornare luctus lorem sit amet, eleifend vestibulum diam. Maecenas luctus imperdiet metus id rutrum. Sed sit amet odio lorem. Proin tristique a ipsum ac consequat. Mauris mollis lobortis enim pharetra hendrerit.</p>
+      <p>Donec in commodo ligula. Ut blandit, sapien eget luctus pellentesque, est arcu auctor quam, et faucibus lacus est nec sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed neque diam, lobortis nec bibendum ac, accumsan in lectus. Aliquam finibus in massa quis imperdiet. Aenean quis convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia, neque ut consequat consectetur, sapien lectus tempor ligula, non consequat nibh mi a dolor.</p>
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
 
 <!-- bower:js -->
 <script src="bower_components/angular/angular.js"></script>
@@ -24,19 +66,23 @@
 <script src="bower_components/angular-route/angular-route.js"></script>
 <!-- endbower -->
 
+<script src="bower_components/tink-navigation-angular/dist/tink-navigation-angular.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/tink-api-javascript/dist/tink-api-javascript.js"></script>
+<script src="bower_components/tink-api-angular/dist/tink-api-angular.js"></script>
+
 <script src="scripts/services/tink-anchor-scroll-angular.js"></script>
 
 <script>
   var myApp;
     try {
-      myApp = angular.module('tink.anchorscroll');
+      myApp = angular.module('anchorscroll');
     } catch (e) {
-      myApp = angular.module('tink.anchorscroll', ['tink.anchorscroll']);
+      myApp = angular.module('anchorscroll', ['tink.anchorscroll','tink.navigation', 'tink.tinkApi']);
     }
   myApp.controller('ctrl', ['$scope','tinkAnchorScroll', function(scope,tinkAnchorScroll) {
-    scope.test = function() {
-      // console.log('ctrl');
-      tinkAnchorScroll.test();
+    scope.scr = function(id) {
+      tinkAnchorScroll.scrollTo(id);
     }
   }]);
 </script>
