@@ -24,6 +24,14 @@
         var y = elm.offsetTop;
         var node = elm;
         var padding = parseFloat($('body').css('padding-top')) || 0;
+
+        // Stick to top
+        var stickies = [];
+        stickies = document.getElementsByClassName('is-sticky');
+        for (var i = 0; i < stickies.length; i++) {
+          padding += $(stickies[i]).outerHeight();
+        }
+
         while (node.offsetParent && node.offsetParent !== document.body) {
           node = node.offsetParent;
           y += node.offsetTop;

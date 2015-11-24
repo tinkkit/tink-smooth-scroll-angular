@@ -24,6 +24,9 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-push-5 col-md-push-4 col-lg-push-3">
+      <div  style="background:yellow;" data-tink-sticky>
+        <p>Sticky</p>
+      </div>
       <h1 id="up">Push the button</h1>
       <p>
         <button ng-click="scr('down')">Scroll down</button>
@@ -70,6 +73,7 @@
 <script src="bower_components/lodash/lodash.js"></script>
 <script src="bower_components/tink-api-javascript/dist/tink-api-javascript.js"></script>
 <script src="bower_components/tink-api-angular/dist/tink-api-angular.js"></script>
+<script src="bower_components/tink-stick-to-top-angular/dist/tink-stick-to-top-angular.js"></script>
 
 <script src="scripts/services/tink-smooth-scroll-angular.js"></script>
 
@@ -78,7 +82,7 @@
     try {
       myApp = angular.module('smoothscroll');
     } catch (e) {
-      myApp = angular.module('smoothscroll', ['tink.smoothscroll','tink.navigation', 'tink.tinkApi']);
+      myApp = angular.module('smoothscroll', ['tink.smoothscroll', 'tink.navigation', 'tink.tinkApi', 'tink.sticktotop']);
     }
   myApp.controller('ctrl', ['$scope','tinkSmoothScroll', function(scope,tinkSmoothScroll) {
     scope.scr = function(id) {

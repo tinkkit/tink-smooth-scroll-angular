@@ -22,13 +22,19 @@ Tink is an in-house developed easy-to-use front end framework for quick prototyp
 
 2. Include `dist/tink-smooth-scroll-angular.js` and its necessary dependencies in your project.
 
+3. Add `tink.smoothscroll` to your app module's dependencies.
+
+   `angular.module('myApp', ['tink.smoothscroll']);`
+
+
+
 ## How to use
 
 ```js
 myApp.controller('myController', ['tinkSmoothScroll', function(tinkSmoothScroll) {
   this.scrollTo = function(id) {
     tinkSmoothScroll.scrollToID(id);
-  }
+  };
 }]);
 ```
 

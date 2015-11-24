@@ -26,6 +26,7 @@
     "angular-mocks": "~1.4.3",
     "angular-scenario": "~1.4.3",
     "tink-core": "latest",
-    "tink-navigation-angular": "~1.2.0"
+    "tink-navigation-angular": "~1.2.0",
+    "tink-stick-to-top-angular": "~1.0.6"
   }
 }
