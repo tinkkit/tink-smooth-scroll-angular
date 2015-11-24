@@ -1,17 +1,17 @@
 'use strict';
 (function(module) {
   try {
-    module = angular.module('tink.anchorscroll');
+    module = angular.module('tink.smoothscroll');
   } catch (e) {
-    module = angular.module('tink.anchorscroll', []);
+    module = angular.module('tink.smoothscroll', []);
   }
-  module.service('tinkAnchorScroll', ['$timeout', function ($timeout) {
+  module.service('tinkSmoothScroll', ['$timeout', function ($timeout) {
 
     /**
      * Check the API down below
      */
 
-    function _scrollTo(id, speed) {
+    function _scrollTo(id) {
 
       /**
        * Helper functions
@@ -38,12 +38,8 @@
         scrollTo(0, stopY); return;
       }
 
-      // Set speed
-      if (typeof speed === 'undefined') {
-        speed = Math.round(distance / 100);
-        if (speed >= 15) { speed = 15; }
-      }
-
+      var speed = Math.round(distance / 100);
+      if (speed >= 15) { speed = 15; }
       var step = Math.round(distance / 25);
       var leapY = stopY > startY ? startY + step : startY - step;
       var timer = 0;

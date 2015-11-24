@@ -22,7 +22,7 @@ module.exports = function (grunt) {
     dist: 'dist',
     version: currentversion,
     module: require('./package.json').name,
-    domain: 'tink.anchorscroll'
+    domain: 'tink.smoothscroll'
   };
 
   // Define the configuration for all the tasks

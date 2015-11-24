@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="has-top-nav" ng-app="anchorscroll" ng-controller="ctrl">
+<html class="has-top-nav" ng-app="smoothscroll" ng-controller="ctrl">
 <head>
   <meta charset="utf-8">
   <title>Tink module</title>
@@ -71,18 +71,18 @@
 <script src="bower_components/tink-api-javascript/dist/tink-api-javascript.js"></script>
 <script src="bower_components/tink-api-angular/dist/tink-api-angular.js"></script>
 
-<script src="scripts/services/tink-anchor-scroll-angular.js"></script>
+<script src="scripts/services/tink-smooth-scroll-angular.js"></script>
 
 <script>
   var myApp;
     try {
-      myApp = angular.module('anchorscroll');
+      myApp = angular.module('smoothscroll');
     } catch (e) {
-      myApp = angular.module('anchorscroll', ['tink.anchorscroll','tink.navigation', 'tink.tinkApi']);
+      myApp = angular.module('smoothscroll', ['tink.smoothscroll','tink.navigation', 'tink.tinkApi']);
     }
-  myApp.controller('ctrl', ['$scope','tinkAnchorScroll', function(scope,tinkAnchorScroll) {
+  myApp.controller('ctrl', ['$scope','tinkSmoothScroll', function(scope,tinkSmoothScroll) {
     scope.scr = function(id) {
-      tinkAnchorScroll.scrollTo(id);
+      tinkSmoothScroll.scrollTo(id);
     }
   }]);
 </script>

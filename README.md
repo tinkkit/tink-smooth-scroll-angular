@@ -1,10 +1,10 @@
-# Tink anchor scroll Angular service
+# Tink smooth scroll Angular service
 
 v1.0.0
 
 ## What is this repository for?
 
-The Tink Angular anchor scroll service gives you an easy way to scroll to an element.
+The Tink Angular smooth scroll service gives you an easy way to scroll to an element.
 
 Tink is an in-house developed easy-to-use front end framework for quick prototyping and simple deployment of all kinds of websites and apps, keeping a uniform and consistent look and feel.
 
@@ -18,11 +18,26 @@ Tink is an in-house developed easy-to-use front end framework for quick prototyp
 ### Install
 
 1. Go to the root of your project and type the following command in your terminal:
-   `bower install tink-anchor-scroll-angular --save`
+   `bower install tink-smooth-scroll-angular --save`
 
-2. Include `dist/tink-anchor-scroll-angular.js` and its necessary dependencies in your project.
+2. Include `dist/tink-smooth-scroll-angular.js` and its necessary dependencies in your project.
 
-3. On http://tink.digipolis.be you will find all necessary documentation.
+## How to use
+
+```js
+myApp.controller('myController', ['tinkSmoothScroll', function(tinkSmoothScroll) {
+  this.scrollTo = function(id) {
+    tinkSmoothScroll.scrollToID(id);
+  }
+}]);
+```
+
+```html
+<button ng-click="scrollToID('down')">Scroll to id 'down'</button>
+[...]
+<div id="down">It will scroll to this element</div>
+```
+
 
 ## Contribution guidelines
 

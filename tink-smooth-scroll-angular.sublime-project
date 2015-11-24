@@ -20,7 +20,7 @@
 				"dist",
 				"node_modules"
 			],
-			"name": "tink-anchor-scroll-angular",
+			"name": "tink-smooth-scroll-angular",
 			"path": "/"
 		}
 	],

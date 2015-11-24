@@ -1,8 +1,8 @@
 {
-  "name": "tink-anchor-scroll-angular",
+  "name": "tink-smooth-scroll-angular",
   "version": "1.0.0",
   "main": [
-    "dist/tink-anchor-scroll-angular.js"
+    "dist/tink-smooth-scroll-angular.js"
   ],
   "ignore": [
     ".*",
